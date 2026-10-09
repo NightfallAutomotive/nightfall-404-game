@@ -1,0 +1,7 @@
+roms/
+*.gb
+*.gbc
+*.gba
+*.sav
+*.state
+*.zip

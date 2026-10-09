@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#242933">
+    <title>404 | Nightfall Automotive</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="page">
+        <header class="error-header">
+            <div class="error-code">404</div>
+            <div class="header-copy">
+                <span class="eyebrow">NIGHTFALL AUTOMOTIVE</span>
+                <h1>You've taken a wrong turn.</h1>
+                <p>This page is missing. Your next adventure isn't.</p>
+            </div>
+        </header>
+
+        <section class="arcade">
+            <div class="arcade-header">
+                <div class="brand-mark">N</div>
+                <div>
+                    <span class="eyebrow">NIGHTFALL ARCADE</span>
+                    <h2>A wild game appeared!</h2>
+                </div>
+                <span class="arcade-status">
+                    <span class="status-dot"></span>
+                    READY TO PLAY
+                </span>
+            </div>
+
+            <div class="arcade-layout">
+                <section class="info-panel">
+                    <div class="game-title">
+                        <span class="game-icon">◆</span>
+                        <div>
+                            <h3>Pokémon Ruby</h3>
+                            <p>GAME BOY ADVANCE · HOENN REGION</p>
+                        </div>
+                    </div>
+
+                    <p class="intro">
+                        Take a break from the road and revisit the Hoenn
+                        region. Your next adventure starts here.
+                    </p>
+
+                    <div class="save-notice">
+                        <div class="notice-heading">
+                            <span class="notice-icon">↻</span>
+                            <strong>Protect your progress</strong>
+                        </div>
+                        <p>
+                            Before leaving or refreshing, open the emulator
+                            menu and select <strong>Save State</strong>.
+                            When you return, choose <strong>Load State</strong>.
+                        </p>
+                        <p class="notice-foot">
+                            The normal in-game save may not persist after
+                            refreshing this page.
+                        </p>
+                    </div>
+
+                    <div class="controls">
+                        <div class="section-heading">
+                            <h3>Keyboard controls</h3>
+                            <span>PLAYER 1</span>
+                        </div>
+
+                        <div class="control-list">
+                            <div class="control-row">
+                                <span class="control-label">Movement</span>
+                                <div class="key-group">
+                                    <kbd>↑</kbd>
+                                    <kbd>↓</kbd>
+                                    <kbd>←</kbd>
+                                    <kbd>→</kbd>
+                                </div>
+                            </div>
+
+                            <div class="control-row">
+                                <span class="control-label">A button</span>
+                                <kbd>Z</kbd>
+                            </div>
+
+                            <div class="control-row">
+                                <span class="control-label">B button</span>
+                                <kbd>X</kbd>
+                            </div>
+
+                            <div class="control-row">
+                                <span class="control-label">Start</span>
+                                <kbd class="wide-key">ENTER</kbd>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="keyboard-tip">
+                        Click inside the game if your controls aren't
+                        responding.
+                    </p>
+                </section>
+
+                <section class="console-panel">
+                    <div class="console-topline">
+                        <span>NF-01</span>
+                        <span>POCKET ARCADE</span>
+                    </div>
+
+                    <div class="gameboy">
+                        <div class="screen-bezel">
+                            <div class="screen-label">
+                                <span>DOT MATRIX WITH STEREO SOUND</span>
+                            </div>
+                            <div id="game"></div>
+                        </div>
+
+                        <div class="console-brand">
+                            <span class="brand-name">NIGHTFALL</span>
+                            <span class="brand-edition">ADVANCE</span>
+                        </div>
+
+                        <div class="console-controls">
+                            <div class="dpad" aria-hidden="true">
+                                <span class="dpad-up">▲</span>
+                                <span class="dpad-left">◀</span>
+                                <span class="dpad-centre"></span>
+                                <span class="dpad-right">▶</span>
+                                <span class="dpad-down">▼</span>
+                            </div>
+
+                            <div class="action-buttons" aria-hidden="true">
+                                <span class="button-b">B</span>
+                                <span class="button-a">A</span>
+                            </div>
+                        </div>
+
+                        <div class="console-bottom">
+                            <span>SELECT</span>
+                            <span>START</span>
+                        </div>
+
+                        <div class="speaker-grille" aria-hidden="true">
+                            <i></i><i></i><i></i><i></i><i></i>
+                        </div>
+                    </div>
+
+                    <p class="console-caption">
+                        A LITTLE BONUS FOR GETTING LOST.
+                    </p>
+                </section>
+            </div>
+
+            <footer class="arcade-footer">
+                <span>NIGHTFALL AUTOMOTIVE</span>
+                <a href="https://www.nightfallautomotive.co.uk/">
+                    BACK TO THE GARAGE ↗
+                </a>
+            </footer>
+        </section>
+
+        <footer class="page-footer">
+            MOBILE ECU REMAPPING · TUNING · DIAGNOSTICS
+            <span>ACROSS EAST ANGLIA</span>
+        </footer>
+    </main>
+
+    <!-- EmulatorJS configuration -->
+    <script>
+        EJS_player = "#game";
+        EJS_gameUrl = "roms/PokemonRubyVersion.gba";
+        EJS_core = "gba";
+        EJS_pathtodata =
+            "https://cdn.emulatorjs.org/4.2.3/data/";
+
+        EJS_gameName = "Pokemon Ruby";
+        EJS_gameID = 40402;
+
+        EJS_fixedSaveInterval = 7000;
+
+        EJS_startOnLoaded = true;
+        EJS_language = "en-US";
+        EJS_disableAutoLang = true;
+
+        EJS_defaultOptions = {
+            "save-state-location": "browser"
+        };
+
+        EJS_backgroundColor = "#000000";
+        EJS_color = "#88c0d0";
+
+        EJS_ready = function () {
+            console.log("[Nightfall 404] EmulatorJS ready");
+            console.log("[Nightfall 404] Version:", EJS_emulator?.ejs_version);
+            console.log("[Nightfall 404] Game:", EJS_gameName);
+        };
+
+        EJS_onGameStart = function () {
+            console.log("[Nightfall 404] Pokemon Ruby started");
+        };
+    </script>
+
+    <script src="https://cdn.emulatorjs.org/4.2.3/data/loader.js"></script>
+
+    <!-- Prevent gameplay keys from scrolling the page -->
+    <script>
+        const gameKeys = [
+            "ArrowUp",
+            "ArrowDown",
+            "ArrowLeft",
+            "ArrowRight",
+            "Enter",
+            " ",
+            "z",
+            "x",
+            "a",
+            "s"
+        ];
+
+        window.addEventListener("keydown", function (event) {
+            if (gameKeys.includes(event.key)) {
+                event.preventDefault();
+            }
+        }, { passive: false });
+
+        window.addEventListener("keyup", function (event) {
+            if (gameKeys.includes(event.key)) {
+                event.preventDefault();
+            }
+        }, { passive: false });
+    </script>
+</body>
+</html>
